@@ -1,0 +1,58 @@
+[project]
+name = "project-pov-video-agent"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Ansh David", email = "ansh1990@gmail.com"},
+]
+
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+dependencies = [
+    "openai>=1.63.2",
+    "sentence-transformers>=3.4.1",
+    "pydantic-ai>=0.0.49",
+    "pydantic-graph>=0.0.49",
+    "matplotlib>=3.10.1",
+]
+
+[tool.black]
+line-length = 120
+extend-exclude = '''
+/(
+    | .github\/
+    | .ipynb_checkpoints\/
+    | .mypy_cache\/
+    | .pytest_cache\/
+    | .tox\/
+    | .venv\/
+    | .vscode\/
+    | build\/
+    | dist\/
+    | docs\/
+    | examples\/
+    | log\/
+    | QMBT.egg-info\/
+    | resources\/
+    | scripts\/
+    | QMBT.egg-info\/
+/)
+'''
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "pylint>=3.3.6",
+    "mypy>=1.15.0",
+    "autoflake>=2.3.1",
+    "flake8>=7.2.0",
+    "cython>=3.0.12",
+    "ipykernel>=6.29.5",
+    "types-python-dateutil>=2.9.0.20241206",
+]

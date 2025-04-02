@@ -172,3 +172,6 @@ app.tar
 **/*.db
 aws/server/*
 embedding/dataset/**/*
+.resources
+question_graph.json
+examples
