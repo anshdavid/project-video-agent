@@ -162,16 +162,5 @@ cython_debug/
 
 # Project --------------------------------------------------------------------
 .vscode
-**/*.ipynb
-**/_test*.py
-.prompts
-.gradio
-.htmx-polling.md
-app.tar
 .pdm-python
-**/*.db
-aws/server/*
-embedding/dataset/**/*
 .resources
-question_graph.json
-examples
