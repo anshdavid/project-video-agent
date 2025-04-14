@@ -3,7 +3,7 @@
 Video Agent is a tool designed to generate highly immersive and cinematic 5-second video ideas, scripts, and storyboards. It leverages advanced AI models to create detailed and hyper-realistic cinematography, making it ideal for creative professionals and enthusiasts looking to bring their video concepts to life.
 
 
-[![demo video](examples/demo.png)][https://drive.google.com/file/d/1WNbLnm4DYvSCu6oyGbH7Luz8BmnBLfB7/view?usp=sharing]
+[![demo video](examples/demo.png)][__DEMO_BASIC__]
 
 ## Setting
 The project is structured as follows:
@@ -88,3 +88,7 @@ The project includes a `merge.py`. This script is designed to create video grids
 2. **Enhanced Prompts**: Add more detailed and diverse prompts to improve the quality and variety of generated content.
 3. **Visualization**: Develop a graphical interface to visualize the generated storyboards and scripts interactively.
 4. **Multi-Agent Collaboration**: Enable collaboration between multiple agents to handle complex video generation tasks.
+
+---
+
+[__DEMO_BASIC__]: https://drive.google.com/file/d/1WNbLnm4DYvSCu6oyGbH7Luz8BmnBLfB7/view?usp=sharing
