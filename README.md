@@ -48,6 +48,38 @@ You can replace the model names (e.g., `openai:gpt-4o`) with other supported mod
 ## Uploading the State Model
 The state model is defined in `models.py` under the `POVGenState` class. You can extend or modify this class to include additional fields or functionality as required.
 
+## Merge Script
+
+The project includes a `merge.py`. This script is designed to create video grids and concatenate multiple video files into a single output. It provides the following functionalities:
+
+1. **Create a 2x2 Grid**:
+   - Combines four input videos into a 2x2 grid layout.
+   - Each video is scaled to 360x640 and overlaid on a 720x1280 blank canvas.
+   - The layout positions videos as follows:
+     - Top-left: at (0, 0)
+     - Top-right: at (360, 0)
+     - Bottom-left: at (0, 640)
+     - Bottom-right: at (360, 640)
+
+2. **Create a Vertical Grid**:
+   - Combines two input videos into a vertical stack.
+   - Each video is scaled to 720x640 and overlaid on a 720x1280 blank canvas.
+   - The layout positions videos as follows:
+     - Top: at (0, 0)
+     - Bottom: at (0, 640)
+
+3. **Concatenate Segments**:
+   - Concatenates multiple video segments into a single video file using the FFmpeg concat demuxer.
+
+### How to Use the Merge Script
+1. Place your input video files in the `examples/` directory.
+2. Update the `input_files` list in the `merge.py` script with the names of your video files.
+3. Run the script using the command:
+   ```
+   python examples/merge.py
+   ```
+4. The final output video will be saved as `final_grid_video.mp4` in the `examples/` directory.
+
 ## Future Improvements
 1. **Feedback Mechanism**: Implement a Pydantic node to gather user feedback on the generated ideas, scripts, and storyboards. This can be integrated into the workflow to refine outputs based on user preferences.
 2. **Enhanced Prompts**: Add more detailed and diverse prompts to improve the quality and variety of generated content.
