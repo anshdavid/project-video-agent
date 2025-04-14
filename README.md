@@ -2,6 +2,9 @@
 
 Video Agent is a tool designed to generate highly immersive and cinematic 5-second video ideas, scripts, and storyboards. It leverages advanced AI models to create detailed and hyper-realistic cinematography, making it ideal for creative professionals and enthusiasts looking to bring their video concepts to life.
 
+
+[![demo video](examples/demo.png)][https://drive.google.com/file/d/1WNbLnm4DYvSCu6oyGbH7Luz8BmnBLfB7/view?usp=sharing]
+
 ## Setting
 The project is structured as follows:
 - **agent.py**: The main script that orchestrates the workflow of the agents.
